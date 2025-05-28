@@ -1,6 +1,7 @@
 import typer
 from rich.console import Console
 from rich.prompt import Prompt
+from rich.panel import Panel
 from ai_agent import CommandAI
 from config import OPENAI_API_KEY
 
@@ -12,9 +13,13 @@ def check_api_key():
     """Check if OpenAI API key is set."""
     if not OPENAI_API_KEY:
         console.print(
-            "[red]Error: OPENAI_API_KEY not found in environment variables[/red]"
+            Panel(
+                "[red]Error: OPENAI_API_KEY not found in environment variables[/red]\n"
+                "Please set your OpenAI API key in the .env file",
+                title="SWAT CMD AI Error",
+                border_style="red",
+            )
         )
-        console.print("Please set your OpenAI API key in the .env file")
         raise typer.Exit(1)
 
 
@@ -28,19 +33,43 @@ def execute(
     if not command:
         command = Prompt.ask("Enter your command")
 
-    console.print(f"\n[bold blue]Processing command:[/bold blue] {command}\n")
+    console.print(
+        Panel(
+            f"[bold blue]Processing command:[/bold blue] {command}",
+            title="SWAT CMD AI",
+            border_style="blue",
+        )
+    )
 
     try:
         ai = CommandAI()
         result = ai.process_command(command)
 
         if result["success"]:
-            console.print("\n[green]Command executed successfully![/green]")
+            console.print(
+                Panel(
+                    "\n[green]Command executed successfully![/green]",
+                    title="SWAT CMD AI",
+                    border_style="green",
+                )
+            )
         else:
-            console.print("\n[red]Command execution failed![/red]")
+            console.print(
+                Panel(
+                    "\n[red]Command execution failed![/red]",
+                    title="SWAT CMD AI",
+                    border_style="red",
+                )
+            )
 
     except Exception as e:
-        console.print(f"\n[red]Error:[/red] {str(e)}")
+        console.print(
+            Panel(
+                f"\n[red]Error:[/red] {str(e)}",
+                title="SWAT CMD AI Error",
+                border_style="red",
+            )
+        )
         raise typer.Exit(1)
 
 
@@ -54,14 +83,29 @@ def history():
         history = ai.get_command_history()
 
         if not history:
-            console.print("[yellow]No command history found[/yellow]")
+            console.print(
+                Panel(
+                    "[yellow]No command history found[/yellow]",
+                    title="SWAT CMD AI History",
+                    border_style="yellow",
+                )
+            )
             return
 
-        console.print("\n[bold blue]Command History:[/bold blue]\n")
+        console.print(
+            Panel(
+                "\n[bold blue]Command History:[/bold blue]\n",
+                title="SWAT CMD AI History",
+                border_style="blue",
+            )
+        )
         for entry in history:
             console.print(f"[bold]Command:[/bold] {entry['command']}")
             console.print(f"[bold]Status:[/bold] {entry['status']}")
             console.print(f"[bold]Timestamp:[/bold] {entry['timestamp']}")
+            console.print(
+                f"[bold]Working Directory:[/bold] {entry.get('working_directory', 'N/A')}"
+            )
             if entry["status"] == "success":
                 console.print(f"[bold]Output:[/bold]\n{entry['output']}")
             else:
@@ -69,7 +113,13 @@ def history():
             console.print("---")
 
     except Exception as e:
-        console.print(f"\n[red]Error:[/red] {str(e)}")
+        console.print(
+            Panel(
+                f"\n[red]Error:[/red] {str(e)}",
+                title="SWAT CMD AI Error",
+                border_style="red",
+            )
+        )
         raise typer.Exit(1)
 
 
