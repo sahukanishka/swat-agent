@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Get the real directory where the script is located (follow symlinks)
+SCRIPT_PATH="$(readlink -f "$0" 2>/dev/null || realpath "$0")"
+SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
+
+# Activate virtual environment if it exists
+if [ -d "$SCRIPT_DIR/.venv" ]; then
+    source "$SCRIPT_DIR/.venv/bin/activate"
+fi
+
+# Check if a command was provided
+if [ $# -eq 0 ]; then
+    echo "Usage: swat \"your natural language command\""
+    echo "Example: swat \"find the port 8080 and kill it\""
+    exit 1
+fi
+
+# Join all arguments into a single command string
+COMMAND="$*"
+
+# Run the Python script with the command
+python3 "$SCRIPT_DIR/main.py" execute "$COMMAND" 

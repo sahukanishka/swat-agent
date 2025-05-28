@@ -1,0 +1,53 @@
+[
+  {
+    "command": "mkdir -p ~/projects",
+    "output": "",
+    "timestamp": "2025-05-28T22:55:14.047152",
+    "status": "success"
+  },
+  {
+    "command": "mv projects projects_backup",
+    "error": "Command failed with error: mv: rename projects to projects_backup: No such file or directory\n",
+    "timestamp": "2025-05-28T22:58:17.612445",
+    "status": "error"
+  },
+  {
+    "command": "rm -rf ~/projects",
+    "output": "",
+    "timestamp": "2025-05-28T22:59:40.979766",
+    "status": "success"
+  },
+  {
+    "command": "kill $(lsof -t -i:8080)",
+    "error": "Command failed with error: kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]\n",
+    "timestamp": "2025-05-28T23:04:56.346978",
+    "status": "error"
+  },
+  {
+    "command": "lsof -ti :8080 | xargs kill -15",
+    "output": "",
+    "timestamp": "2025-05-28T23:06:19.627550",
+    "status": "success"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-28T23:17:10.412727",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -r love/",
+    "output": "",
+    "timestamp": "2025-05-28T23:17:23.250373",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "echo \".gitignore\" > .gitignore && touch ignored_file.txt",
+    "output": "",
+    "timestamp": "2025-05-28T23:18:00.952420",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  }
+]
