@@ -45,28 +45,29 @@ def execute(
         ai = CommandAI()
         result = ai.process_command(command)
 
-        if result["success"]:
-            console.print(
-                Panel(
-                    "\n[green]Command executed successfully![/green]",
-                    title="SWAT CMD AI",
-                    border_style="green",
+        for result in result["results"]:
+            if result["success"]:
+                console.print(
+                    Panel(
+                        f"\nCommand: {result['command']}\n\n[green]Command executed successfully![/green]\n{result['output']}",
+                        title="SWAT CMD AI",
+                        border_style="green",
+                    )
                 )
-            )
-        else:
-            console.print(
-                Panel(
-                    "\n[red]Command execution failed![/red]",
-                    title="SWAT CMD AI",
-                    border_style="red",
+            else:
+                console.print(
+                    Panel(
+                        f"\nCommand: {result['command']}\n\n[red]Command execution failed![/red]\n{result['output']}",
+                        title="SWAT CMD AI",
+                        border_style="red",
+                    )
                 )
-            )
 
     except Exception as e:
         console.print(
             Panel(
                 f"\n[red]Error:[/red] {str(e)}",
-                title="SWAT CMD AI Error",
+                title="SWAT CMD AI Errors",
                 border_style="red",
             )
         )

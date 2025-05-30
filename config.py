@@ -70,6 +70,20 @@ ALLOWED_COMMANDS = {
     "netstat",
     "taskkill",
     "tasklist",
+    "netstat",
+    "taskkill",
+    "tasklist",
+    "netstat",
+    "taskkill",
+    "tasklist",
+    "netstat",
+    "ping",
+    "traceroute",
+    "dig",
+    "nslookup",
+    "whois",
+    "curl",
+    "wget",
 }
 
 # Platform-specific settings

@@ -49,5 +49,425 @@
     "timestamp": "2025-05-28T23:18:00.952420",
     "status": "success",
     "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-28T23:29:55.129633",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-29T00:05:25.355836",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu"
+  },
+  {
+    "command": "rm -rf /Users/kanishkasahu/love",
+    "output": "",
+    "timestamp": "2025-05-29T00:06:38.971011",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu"
+  },
+  {
+    "command": "echo 'i love you payal' > payal.txt",
+    "output": "",
+    "timestamp": "2025-05-29T00:07:33.287793",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu"
+  },
+  {
+    "command": "rm -i payal.txt",
+    "output": "",
+    "timestamp": "2025-05-29T00:08:25.684018",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu"
+  },
+  {
+    "command": "echo 'i love you payal' > payal.txt",
+    "output": "",
+    "timestamp": "2025-05-29T00:15:19.148468",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-30T12:48:06.034159",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch love/free.txt",
+    "output": "",
+    "timestamp": "2025-05-30T12:48:06.045267",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "echo \"i love coding\" > love/free.txt",
+    "output": "",
+    "timestamp": "2025-05-30T12:48:06.052412",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-30T12:49:17.007556",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "cd love",
+    "output": "",
+    "timestamp": "2025-05-30T12:49:17.021417",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "echo \"i love coding\" > free.txt",
+    "output": "",
+    "timestamp": "2025-05-30T12:49:17.030252",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir love",
+    "error": "Command failed with error: mkdir: love: File exists\n",
+    "timestamp": "2025-05-30T12:50:53.069698",
+    "status": "error",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-30T12:51:19.090024",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir -p love",
+    "output": "",
+    "timestamp": "2025-05-30T12:51:19.099299",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "echo \"i love coding\" > love/free.txt",
+    "output": "",
+    "timestamp": "2025-05-30T12:51:19.115071",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-30T12:52:09.560949",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch love/free.txt",
+    "output": "",
+    "timestamp": "2025-05-30T12:52:09.569570",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "echo \"i love coding\" >> love/free.txt",
+    "output": "",
+    "timestamp": "2025-05-30T12:52:09.575836",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-30T12:53:06.745713",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir -p love",
+    "output": "",
+    "timestamp": "2025-05-30T12:53:06.755803",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "echo \"i love coding\" > love/free.txt",
+    "output": "",
+    "timestamp": "2025-05-30T12:53:06.762985",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-30T12:54:30.682056",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "cd love",
+    "output": "",
+    "timestamp": "2025-05-30T12:54:30.691847",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "echo \"i love coding\" > free.txt",
+    "output": "",
+    "timestamp": "2025-05-30T12:54:30.700034",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:25:45.093610",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "cd kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:25:45.101385",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch .env",
+    "output": "",
+    "timestamp": "2025-05-30T16:25:45.109022",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir -p kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:26:34.079006",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch kanix/.env",
+    "output": "",
+    "timestamp": "2025-05-30T16:26:34.094024",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -rf kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:27:29.961816",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -r ./kanix",
+    "error": "Command failed with error: rm: ./kanix: No such file or directory\n",
+    "timestamp": "2025-05-30T16:28:13.209747",
+    "status": "error",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:28:32.033989",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch kanix/.env",
+    "output": "",
+    "timestamp": "2025-05-30T16:28:32.053371",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -rf ./kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:29:25.180928",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:29:49.772249",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "cd kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:29:49.783315",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch .env",
+    "output": "",
+    "timestamp": "2025-05-30T16:29:49.806970",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -rf ./kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:32:11.557296",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:33:30.045208",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch kanix/.env",
+    "output": "",
+    "timestamp": "2025-05-30T16:33:30.058838",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -rf kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:34:12.499945",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:34:40.683569",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch kanix/.env",
+    "output": "",
+    "timestamp": "2025-05-30T16:34:40.696978",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -r kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:35:01.799167",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -rf kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:35:28.191270",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:37:17.715037",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch kanix/.env",
+    "output": "",
+    "timestamp": "2025-05-30T16:37:17.725018",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -rf kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:38:11.101766",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "rm -rf ./kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:39:06.685280",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "mkdir kanix",
+    "output": "",
+    "timestamp": "2025-05-30T16:39:15.629293",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "touch kanix/.env",
+    "output": "",
+    "timestamp": "2025-05-30T16:39:15.639176",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/cmd-ai"
+  },
+  {
+    "command": "ping -c 4 google.com",
+    "output": "PING google.com (142.250.67.78): 56 data bytes\n64 bytes from 142.250.67.78: icmp_seq=0 ttl=118 time=29.580 ms\n64 bytes from 142.250.67.78: icmp_seq=1 ttl=118 time=29.759 ms\n64 bytes from 142.250.67.78: icmp_seq=2 ttl=118 time=29.051 ms\n64 bytes from 142.250.67.78: icmp_seq=3 ttl=118 time=33.085 ms\n\n--- google.com ping statistics ---\n4 packets transmitted, 4 packets received, 0.0% packet loss\nround-trip min/avg/max/stddev = 29.051/30.369/33.085/1.590 ms\n",
+    "timestamp": "2025-05-30T20:03:45.493117",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix"
+  },
+  {
+    "command": "ping -c 4 google.com",
+    "output": "PING google.com (142.250.67.78): 56 data bytes\n64 bytes from 142.250.67.78: icmp_seq=0 ttl=118 time=29.419 ms\n64 bytes from 142.250.67.78: icmp_seq=1 ttl=118 time=30.396 ms\n64 bytes from 142.250.67.78: icmp_seq=2 ttl=118 time=29.027 ms\n64 bytes from 142.250.67.78: icmp_seq=3 ttl=118 time=32.853 ms\n\n--- google.com ping statistics ---\n4 packets transmitted, 4 packets received, 0.0% packet loss\nround-trip min/avg/max/stddev = 29.027/30.424/32.853/1.488 ms\n",
+    "timestamp": "2025-05-30T20:04:07.250461",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix"
+  },
+  {
+    "command": "pwd",
+    "output": "/Users/kanishkasahu/Documents/neurix\n",
+    "timestamp": "2025-05-30T20:04:47.162071",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix"
+  },
+  {
+    "command": "mkdir neurix",
+    "output": "",
+    "timestamp": "2025-05-30T20:07:48.675650",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix"
+  },
+  {
+    "command": "lsof -ti :8080 | xargs -r kill -SIGTERM",
+    "output": "",
+    "timestamp": "2025-05-30T20:08:20.625472",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/neurix"
+  },
+  {
+    "command": "lsof -ti :8080 | xargs -r kill -9",
+    "output": "",
+    "timestamp": "2025-05-30T20:11:49.617088",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/neurix"
+  },
+  {
+    "command": "mkdir love",
+    "output": "",
+    "timestamp": "2025-05-30T20:12:39.110704",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/neurix"
+  },
+  {
+    "command": "echo \"i love coding\" > love/.env",
+    "output": "",
+    "timestamp": "2025-05-30T20:12:39.122942",
+    "status": "success",
+    "working_directory": "/Users/kanishkasahu/Documents/neurix/neurix"
   }
 ]

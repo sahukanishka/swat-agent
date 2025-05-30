@@ -97,6 +97,109 @@ class CommandExecutor:
 
     def display_result(self, success: bool, message: str):
         """Display command execution result in a formatted way."""
+        try:
+            style = "green" if success else "red"
+            # Ensure message is a string and not None
+            message = str(message) if message is not None else ""
+            console.print(
+                Panel(
+                    f"Working Directory: {self.original_cwd}\n\n{message}",
+                    title="Command Result",
+                    style=style,
+                )
+            )
+        except Exception as e:
+            console.print(f"[red]Error displaying result: {str(e)}[/red]")
+            # Fallback display
+            console.print(
+                f"[{'green' if success else 'red'}]Command {'succeeded' if success else 'failed'}[/{'green' if success else 'red'}]"
+            )
+            if message:
+                console.print(f"Output: {message}")
+
+    def get_command_history(self) -> List[Dict]:
+        """Get command execution history."""
+        return self.command_history
+
+
+class MultiCommandExecutor(CommandExecutor):
+    def __init__(self):
+        super().__init__()
+        self.command_results = []
+
+    def execute_sequential_commands(self, commands: List[str]) -> List[Dict]:
+        """
+        Execute a list of commands sequentially, where each command can depend on the result of previous commands.
+
+        Args:
+            commands: List of commands to execute in sequence
+
+        Returns:
+            List of dictionaries containing the results of each command execution
+        """
+        results = []
+
+        for command in commands:
+            try:
+                # Validate command first
+                is_valid, message = self.validate_command(command)
+                if not is_valid:
+                    result = {
+                        "command": command,
+                        "success": False,
+                        "output": f"Invalid command: {message}",
+                        "timestamp": datetime.now().isoformat(),
+                    }
+                    results.append(result)
+                    console.print(f"[red]Invalid command: {command}[/red]")
+                    console.print(f"[red]Error: {message}[/red]")
+                    break
+
+                # Execute the command
+                success, output = self.execute_command(command)
+                result = {
+                    "command": command,
+                    "success": success,
+                    "output": output,
+                    "timestamp": datetime.now().isoformat(),
+                }
+                results.append(result)
+
+                # If a command fails, we might want to stop the sequence
+                if not success:
+                    console.print(f"[red]Command failed: {command}[/red]")
+                    console.print(f"[red]Error: {output}[/red]")
+                    break
+
+            except Exception as e:
+                error_result = {
+                    "command": command,
+                    "success": False,
+                    "output": str(e),
+                    "timestamp": datetime.now().isoformat(),
+                }
+                results.append(error_result)
+                console.print(f"[red]Error executing command: {command}[/red]")
+                console.print(f"[red]Error details: {str(e)}[/red]")
+                break
+
+        self.command_results = results
+        return results
+
+    def get_last_result(self) -> Optional[Dict]:
+        """Get the result of the last executed command."""
+        return self.command_results[-1] if self.command_results else None
+
+    def get_all_results(self) -> List[Dict]:
+        """Get all command execution results."""
+        return self.command_results
+
+    def clear_results(self):
+        """Clear the command results history."""
+        self.command_results = []
+
+    def display_result(self, success: bool, message: str):
+        """Display command execution result in a formatted way."""
         style = "green" if success else "red"
         console.print(
             Panel(
@@ -105,7 +208,3 @@ class CommandExecutor:
                 style=style,
             )
         )
-
-    def get_command_history(self) -> List[Dict]:
-        """Get command execution history."""
-        return self.command_history

@@ -11,7 +11,7 @@ fi
 
 # Check if a command was provided
 if [ $# -eq 0 ]; then
-    echo "Usage: swat \"your natural language command\""
+    echo "Usage: swat \"your natural language command ai agent\""
     echo "Example: swat \"find the port 8080 and kill it\""
     exit 1
 fi
